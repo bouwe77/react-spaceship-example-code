@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Box from "./Box";
+import { readRandomQuote } from "./api";
 
 export default function Quotes() {
   const [text, setText] = useState();
@@ -15,9 +16,8 @@ export default function Quotes() {
   }, [text]);
 
   function getRandomQuote() {
-    const quotes = ["To be or not be...", "I have a dream...", "Hey ho, let's go..."];
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    setText(quote);
+    const quote = readRandomQuote();
+    setText(quote.text);
   }
 
   return (
