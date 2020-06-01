@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+}
+
+.box {
+  border-radius: 25px;
+  border: 10px solid Green;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+button {
+  font-size: 20pt;
+  margin: 10px;
+}
